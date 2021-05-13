@@ -7,23 +7,24 @@
         font-size: 1.8rem;
         list-style: none;
         display: flex;
-    }
 
-    &__item {
-        margin-left: 3rem;
-    }
+        &--item {
+            margin-left: 3rem;
+        }
+    
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            color: $color-white;
+            font-family: $font-primary;
+            transition: all 0.2s;
+        }
+    
+        &--link:hover,
+        &--link:active {
+            color: $color-dark-gray;
+        }
 
-    &__link:link,
-    &__link:visited {
-        text-decoration: none;
-        color: $color-white;
-        font-family: $font-primary;
-        transition: all 0.2s;
-    }
-
-    &__link:hover,
-    &__link:active {
-        color: $color-dark-gray;
     }
 
     &__text {

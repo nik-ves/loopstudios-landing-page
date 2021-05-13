@@ -1,0 +1,51 @@
+.footer {
+    background-color: $color-black;
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+    }
+
+    &__nav {
+        font-size: 1.8rem;
+        list-style: none;
+        display: flex;
+        
+        &--item {
+            margin-right: 3rem;
+        }
+    
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            color: $color-white;
+            font-family: $font-primary;
+            transition: all 0.2s;
+        }
+    
+        &--link:hover,
+        &--link:active {
+            color: $color-dark-gray;
+        }
+    }
+
+    &__text {
+        color: $color-dark-gray;
+        font-family: $font-primary;
+        font-size: 1.7rem;
+        align-self: center;
+    }
+}
