@@ -1,5 +1,5 @@
 .interactive {
-    padding: 10rem 0 5rem 0;
+    padding: 15rem 0 15rem 0;
 
     &__content {
         display: flex;
@@ -11,9 +11,20 @@
     }
 
     &__text {
-        border: 1px solid black;
-        padding: 5rem;
+        background-color: $color-white;
+        align-self: flex-end;
+        padding: 7rem;
+        padding-bottom: 0;
         display: block;
-        min-height: 300px;
+        max-width: 58rem;
+        transform: translateX(-15rem);
+        z-index: 10;
+
+        &--paragraph {
+            margin-top: 4rem;
+            font-family: $font-primary;
+            font-size: 1.5rem;
+            color: $color-dark-gray;
+        }
     }
 }

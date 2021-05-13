@@ -75,26 +75,35 @@ html {
     padding-top: 6rem; }
 
 .interactive {
-  padding: 10rem 0 5rem 0; }
+  padding: 15rem 0 15rem 0; }
   .interactive__content {
     display: flex; }
   .interactive__image {
     width: 100%;
     height: auto; }
   .interactive__text {
-    border: 1px solid black;
-    padding: 5rem;
+    background-color: white;
+    align-self: flex-end;
+    padding: 7rem;
+    padding-bottom: 0;
     display: block;
-    min-height: 300px; }
+    max-width: 58rem;
+    transform: translateX(-15rem);
+    z-index: 10; }
+    .interactive__text--paragraph {
+      margin-top: 4rem;
+      font-family: "Alata", sans-serif;
+      font-size: 1.5rem;
+      color: #8c8c8c; }
 
 .creations {
-  padding-bottom: 10rem; }
+  padding-bottom: 15rem; }
   .creations__intro-text {
     display: flex;
     justify-content: space-between; }
   .creations__pictures {
     border: 1px solid black;
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-row-gap: 5rem; }
