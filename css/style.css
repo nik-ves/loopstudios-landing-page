@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto; }
+
+.heading-1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300; }
+
+.header {
+  height: 65rem;
+  background-image: url("../images/desktop/image-hero.jpg");
+  background-size: cover; }
+  .header__nav {
+    font-size: 1.8rem;
+    list-style: none;
+    display: flex; }
+  .header__item {
+    margin-left: 3rem; }
+  .header__link:link, .header__link:visited {
+    text-decoration: none;
+    color: white;
+    font-family: "Alata", sans-serif;
+    transition: all 0.2s; }
+  .header__link:hover, .header__link:active {
+    color: #8c8c8c; }
+  .header__text {
+    margin-top: 13rem;
+    color: white;
+    border: solid 2px white;
+    padding: 4rem;
+    display: inline-block;
+    width: 70rem; }
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6rem; }

@@ -1,0 +1,44 @@
+.header {
+    height: 65rem;
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+
+    &__nav {
+        font-size: 1.8rem;
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 3rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-white;
+        font-family: $font-primary;
+        transition: all 0.2s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: $color-dark-gray;
+    }
+
+    &__text {
+        margin-top: 13rem;
+        color: $color-white;
+        border: solid 2px $color-white;
+        padding: 4rem;
+        display: inline-block;
+        width: 70rem;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+

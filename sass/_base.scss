@@ -1,0 +1,27 @@
+// Colors
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-dark-gray: hsl(0, 0%, 55%);
+$color-very-dark-gray: hsl(0, 0%, 41%);
+
+// Fonts
+$font-primary: 'Alata', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // Makes 1rem = 10px -- 10px/16px = 62.5%
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+}
