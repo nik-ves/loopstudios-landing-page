@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; }
 
 .container {
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto; }
 
 .search__icon {
@@ -43,25 +43,31 @@ html {
   font-size: 1.5rem;
   letter-spacing: 5px; }
   .btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: black;
+    color: white; }
 
 .header {
-  height: 65rem;
+  height: 70rem;
   background-image: url("../images/desktop/image-hero.jpg");
   background-size: cover; }
+  .header__logo {
+    flex-grow: 4; }
   .header__nav {
     font-size: 1.8rem;
     list-style: none;
-    display: flex; }
-    .header__nav--item {
-      margin-left: 3rem; }
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around; }
+    .header__nav--link {
+      border-bottom: 1px solid white none; }
     .header__nav--link:link, .header__nav--link:visited {
       text-decoration: none;
       color: white;
-      font-family: "Alata", sans-serif;
-      transition: all 0.2s; }
+      font-family: "Alata", sans-serif; }
     .header__nav--link:hover, .header__nav--link:active {
-      color: #8c8c8c; }
+      padding-bottom: 3px;
+      border-bottom: solid; }
   .header__text {
     margin-top: 13rem;
     color: white;
@@ -77,49 +83,56 @@ html {
 .interactive {
   padding: 15rem 0 15rem 0; }
   .interactive__content {
-    display: flex; }
+    display: flex;
+    width: 100%; }
+  .interactive__picture-box {
+    width: 65%; }
   .interactive__image {
     width: 100%;
     height: auto; }
   .interactive__text {
     background-color: white;
     align-self: flex-end;
-    padding: 7rem;
+    padding: 11rem;
     padding-bottom: 0;
+    padding-right: 0;
     display: block;
-    max-width: 58rem;
-    transform: translateX(-15rem);
+    width: calc(35% + 15rem);
+    margin-left: -15rem;
     z-index: 10; }
     .interactive__text--paragraph {
       margin-top: 4rem;
       font-family: "Alata", sans-serif;
       font-size: 1.5rem;
-      color: #8c8c8c; }
+      color: #8c8c8c;
+      line-height: 1.9; }
 
 .creations {
   padding-bottom: 15rem; }
   .creations__intro-text {
     display: flex;
     justify-content: space-between; }
-  .creations__pictures {
-    border: 1px solid black;
-    margin-top: 8rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-row-gap: 5rem; }
+  .creations__pictures--row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem; }
   .creations__box {
-    position: relative; }
+    position: relative;
+    color: white; }
     .creations__box--image {
-      filter: brightness(70%);
+      filter: brightness(60%);
       max-width: 100%; }
+      .creations__box--image:hover {
+        filter: opacity(60%); }
     .creations__box--text {
       position: absolute;
-      color: white;
       text-transform: uppercase;
       font-size: 3rem;
       bottom: 30px;
       left: 30px;
       font-family: "Josefin Sans", sans-serif; }
+    .creations__box:hover {
+      color: black; }
 
 .footer {
   background-color: black; }
@@ -138,18 +151,21 @@ html {
   .footer__nav {
     font-size: 1.8rem;
     list-style: none;
-    display: flex; }
-    .footer__nav--item {
-      margin-right: 3rem; }
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; }
+    .footer__nav--link {
+      border-bottom: 1px solid white none; }
     .footer__nav--link:link, .footer__nav--link:visited {
       text-decoration: none;
       color: white;
-      font-family: "Alata", sans-serif;
-      transition: all 0.2s; }
+      font-family: "Alata", sans-serif; }
     .footer__nav--link:hover, .footer__nav--link:active {
-      color: #8c8c8c; }
+      padding-bottom: 3px;
+      border-bottom: solid; }
   .footer__text {
+    flex-grow: 3;
     color: #8c8c8c;
     font-family: "Alata", sans-serif;
     font-size: 1.7rem;
-    align-self: center; }
+    text-align: end; }

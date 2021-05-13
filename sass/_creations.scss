@@ -7,30 +7,77 @@
     }
 
     &__pictures {
-        border: 1px solid black;
-        margin-top: 8rem;
 
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-row-gap: 5rem; 
+        &--row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
     }
 
     &__box {
         position: relative;
+        color: $color-white;
 
         &--image {
-            filter: brightness(70%);
-            max-width: 100%;
+            filter: brightness(60%);
+            max-width: 100%;   
+            
+            &:hover {
+                filter: opacity(60%);
+            }
         }
 
         &--text {
             position: absolute;
-            color: $color-white;
             text-transform: uppercase;
             font-size: 3rem;
             bottom: 30px;
             left: 30px;
             font-family: $font-secondary;
         }
+
+        &:hover { 
+            color: $color-black
+        }
     }  
 }
+
+// --- CSS GRID ---
+
+// .creations {
+//     padding-bottom: 15rem;
+
+//     &__intro-text {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+
+//     &__pictures {
+//         border: 1px solid black;
+//         margin-top: 8rem;
+
+//         display: grid;
+//         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+//         grid-row-gap: 5rem; 
+//     }
+
+//     &__box {
+//         position: relative;
+
+//         &--image {
+//             filter: brightness(70%);
+//             max-width: 100%;           
+//         }
+
+//         &--text {
+//             position: absolute;
+//             color: $color-white;
+//             text-transform: uppercase;
+//             font-size: 3rem;
+//             bottom: 30px;
+//             left: 30px;
+//             font-family: $font-secondary;
+//         }
+//     }  
+// }

@@ -22,10 +22,12 @@
     &__nav {
         font-size: 1.8rem;
         list-style: none;
+        flex-grow: 1;
         display: flex;
-        
-        &--item {
-            margin-right: 3rem;
+        justify-content: space-between;
+
+        &--link {
+            border-bottom: 1px solid $color-white none;
         }
     
         &--link:link,
@@ -33,19 +35,20 @@
             text-decoration: none;
             color: $color-white;
             font-family: $font-primary;
-            transition: all 0.2s;
         }
     
         &--link:hover,
         &--link:active {
-            color: $color-dark-gray;
+            padding-bottom: 3px;
+            border-bottom: solid;
         }
     }
 
     &__text {
+        flex-grow: 3;
         color: $color-dark-gray;
         font-family: $font-primary;
         font-size: 1.7rem;
-        align-self: center;
+        text-align: end;
     }
 }

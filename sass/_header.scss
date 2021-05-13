@@ -1,15 +1,21 @@
 .header {
-    height: 65rem;
+    height: 70rem;
     background-image: url("../images/desktop/image-hero.jpg");
     background-size: cover;
+
+    &__logo {
+        flex-grow: 4;
+    }
 
     &__nav {
         font-size: 1.8rem;
         list-style: none;
         display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
 
-        &--item {
-            margin-left: 3rem;
+        &--link {
+            border-bottom: 1px solid $color-white none;
         }
     
         &--link:link,
@@ -17,14 +23,13 @@
             text-decoration: none;
             color: $color-white;
             font-family: $font-primary;
-            transition: all 0.2s;
         }
     
         &--link:hover,
         &--link:active {
-            color: $color-dark-gray;
+            padding-bottom: 3px;
+            border-bottom: solid;
         }
-
     }
 
     &__text {
@@ -42,4 +47,3 @@
         padding-top: 6rem;
     }
 }
-
