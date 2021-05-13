@@ -1,0 +1,19 @@
+.interactive {
+    padding: 10rem 0 5rem 0;
+
+    &__content {
+        display: flex;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        border: 1px solid black;
+        padding: 5rem;
+        display: block;
+        min-height: 300px;
+    }
+}

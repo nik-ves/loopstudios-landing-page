@@ -1,0 +1,36 @@
+.creations {
+    padding-bottom: 10rem;
+
+    &__intro-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__pictures {
+        border: 1px solid black;
+        margin-top: 5rem;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-row-gap: 5rem;   
+    }
+
+    &__box {
+        position: relative;
+
+        &--image {
+            filter: brightness(70%);
+            max-width: 100%;
+        }
+
+        &--text {
+            position: absolute;
+            color: $color-white;
+            text-transform: uppercase;
+            font-size: 3rem;
+            bottom: 30px;
+            left: 30px;
+            font-family: $font-secondary;
+        }
+    }  
+}
