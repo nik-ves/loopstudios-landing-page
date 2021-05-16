@@ -2,9 +2,25 @@
     height: 70rem;
     background-image: url("../images/desktop/image-hero.jpg");
     background-size: cover;
+    padding: 0 3rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 6rem;
+    }
 
     &__logo {
         flex-grow: 4;
+    }
+
+    &__hamburger {
+        display: none;
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: block;
+            align-self: center;
+        }
     }
 
     &__nav {
@@ -13,6 +29,10 @@
         display: flex;
         flex-grow: 1;
         justify-content: space-around;
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: none;
+        }
 
         &--link {
             border-bottom: 1px solid $color-white none;
@@ -38,12 +58,6 @@
         border: solid 2px $color-white;
         padding: 4rem;
         display: inline-block;
-        width: 70rem;
-    }
-
-    &__content {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 6rem;
+        max-width: 70rem;
     }
 }

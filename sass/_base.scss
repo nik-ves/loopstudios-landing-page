@@ -8,6 +8,13 @@ $color-very-dark-gray: hsl(0, 0%, 41%);
 $font-primary: 'Alata', sans-serif;
 $font-secondary: 'Josefin Sans', sans-serif;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 72em;  // 1152px
+$bp-large: 67em;  // 1072px
+$bp-medium: 51em;   // 816px
+$bp-small: 38.5em;  // 616px
+$bp-smallest: 35em; // 560px
+
 *,
 *::before,
 *::after {
@@ -19,6 +26,14 @@ $font-secondary: 'Josefin Sans', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // Makes 1rem = 10px -- 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 45%;
+    }
 }
 
 .container {
@@ -26,8 +41,8 @@ html {
     margin: 0 auto;
 }
 
-.search__icon {
-    width: 1rem;
-    height: 1rem;
-    fill: red;
-}
+// .search__icon {
+//     width: 1rem;
+//     height: 1rem;
+//     fill: red;
+// }

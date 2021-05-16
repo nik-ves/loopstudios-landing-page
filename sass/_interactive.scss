@@ -1,13 +1,29 @@
 .interactive {
-    padding: 15rem 0 15rem 0;
+    padding: 15rem 3rem 15rem 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 10rem 3rem 10rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 8rem 3rem 8rem 3rem;
+    }
 
     &__content {
         display: flex;
         width: 100%;
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+        }
     }
 
     &__picture-box {
         width: 65%;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
     }
 
     &__image {
@@ -26,6 +42,20 @@
         margin-left: -15rem;
         // transform: translateX(-15rem);
         z-index: 10;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding: 7em;
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            align-self: center;
+            width: 100%;
+            padding: 2em 0 0 0;
+            margin: 0;
+            text-align: center;
+        }
 
         &--paragraph {
             margin-top: 4rem;

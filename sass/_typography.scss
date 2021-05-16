@@ -3,6 +3,10 @@
     text-transform: uppercase;
     font-family: $font-secondary;
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 6.5em;
+    }
 }
 
 .heading-2 {
@@ -10,6 +14,10 @@
     text-transform: uppercase;
     font-family: $font-secondary;
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4em;
+    }
 }
 
 .btn {
@@ -29,5 +37,9 @@
         cursor: pointer;
         background-color: $color-black;
         color: $color-white;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 2em;
     }
 }
