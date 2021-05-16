@@ -27,6 +27,9 @@ html {
   @media only screen and (max-width: 38.5em) {
     .heading-1 {
       font-size: 6.5em; } }
+  @media only screen and (max-width: 26.5em) {
+    .heading-1 {
+      font-size: 5em; } }
 
 .heading-2 {
   font-size: 5rem;
@@ -62,27 +65,62 @@ html {
   background-image: url("../images/desktop/image-hero.jpg");
   background-size: cover;
   padding: 0 3rem; }
+  @media only screen and (max-width: 35em) {
+    .header {
+      height: 70em; } }
   .header__content {
     display: flex;
     justify-content: space-between;
     padding-top: 6rem; }
+    @media only screen and (max-width: 26.5em) {
+      .header__content {
+        padding-top: 4em; } }
   .header__logo {
-    flex-grow: 4; }
+    flex-grow: 4;
+    z-index: 10; }
   .header__hamburger {
-    display: none; }
-    @media only screen and (max-width: 35em) {
-      .header__hamburger {
-        display: block;
-        align-self: center; } }
+    align-self: center;
+    z-index: 10; }
+    .header__hamburger--open {
+      display: none; }
+      @media only screen and (max-width: 35em) {
+        .header__hamburger--open {
+          display: block; } }
+    .header__hamburger--close {
+      display: none; }
+    .header__hamburger.open {
+      display: block; }
+    .header__hamburger.close {
+      display: none; }
   .header__nav {
     font-size: 1.8rem;
     list-style: none;
     display: flex;
     flex-grow: 1;
     justify-content: space-around; }
+    .header__nav.hamburger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      min-height: 100vh;
+      background-color: black;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 18em;
+      padding-left: 1.5em; }
     @media only screen and (max-width: 35em) {
       .header__nav {
         display: none; } }
+    @media only screen and (max-width: 35em) {
+      .header__nav--item {
+        font-size: 2.5em;
+        font-family: "Josefin Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding-bottom: 10px; } }
     .header__nav--link {
       border-bottom: 1px solid white none; }
     .header__nav--link:link, .header__nav--link:visited {
@@ -92,13 +130,20 @@ html {
     .header__nav--link:hover, .header__nav--link:active {
       padding-bottom: 3px;
       border-bottom: solid; }
+    .header__nav.show {
+      display: flex;
+      display: block;
+      background-color: red;
+      height: 100%; }
   .header__text {
     margin-top: 13rem;
     color: white;
     border: solid 2px white;
     padding: 4rem;
-    display: inline-block;
-    max-width: 70rem; }
+    display: inline-block; }
+    @media only screen and (max-width: 26.5em) {
+      .header__text {
+        margin-top: 15em; } }
 
 .interactive {
   padding: 15rem 3rem 15rem 3rem; }
@@ -144,12 +189,18 @@ html {
         padding: 2em 0 0 0;
         margin: 0;
         text-align: center; } }
+  @media only screen and (max-width: 38.5em) and (max-width: 26.5em) {
+    .interactive__text {
+      margin-top: 2em; } }
     .interactive__text--paragraph {
       margin-top: 4rem;
       font-family: "Alata", sans-serif;
       font-size: 1.5rem;
       color: #8c8c8c;
       line-height: 1.9; }
+      @media only screen and (max-width: 26.5em) {
+        .interactive__text--paragraph {
+          margin-top: 1em; } }
 
 .creations {
   padding: 0 3rem 12rem 3rem; }
@@ -187,6 +238,9 @@ html {
           height: 30em;
           object-fit: cover;
           object-position: 50% 00%; } }
+      @media only screen and (max-width: 26.5em) {
+        .creations__box--image {
+          height: 20em; } }
       .creations__box--image:hover {
         filter: opacity(60%); }
     .creations__box--text {
@@ -202,7 +256,7 @@ html {
 .footer {
   background-color: black;
   padding: 0 3rem; }
-  @media only screen and (max-width: 35em) {
+  @media only screen and (max-width: 26.5em) {
     .footer__logo {
       margin-bottom: 2em; } }
   .footer__icons {

@@ -14,7 +14,7 @@
         padding-top: 4rem;
         margin-bottom: 2rem;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-smaller) {
             flex-direction: column;
             align-items: center;
             margin-bottom: 2em;
@@ -25,7 +25,7 @@
         height: 1rem;
         width: 1rem;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-smaller) {
             flex-direction: column;
         }
     }
@@ -35,7 +35,7 @@
         justify-content: space-between;
         padding-bottom: 4rem;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-smaller) {
             flex-direction: column;
             justify-content: center;
             // padding-bottom: 2em;
@@ -49,7 +49,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-smaller) {
             text-align: center;
             margin-bottom: 2em;
         }
@@ -79,7 +79,7 @@
         font-size: 1.7rem;
         text-align: end;
 
-        @media only screen and (max-width: $bp-smallest) {
+        @media only screen and (max-width: $bp-smaller) {
             text-align: center;
         }
     }

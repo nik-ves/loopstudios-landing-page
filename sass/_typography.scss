@@ -7,6 +7,10 @@
     @media only screen and (max-width: $bp-small) {
         font-size: 6.5em;
     }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 5em;
+    }
 }
 
 .heading-2 {
@@ -39,7 +43,7 @@
         color: $color-white;
     }
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-smaller) {
         margin-top: 2em;
     }
 }

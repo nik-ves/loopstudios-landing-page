@@ -55,6 +55,10 @@
             padding: 2em 0 0 0;
             margin: 0;
             text-align: center;
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-top: 2em;
+            }
         }
 
         &--paragraph {
@@ -63,6 +67,10 @@
             font-size: 1.5rem;
             color: $color-dark-gray;
             line-height: 1.9;
+
+            @media only screen and (max-width: $bp-smallest) {
+                margin-top: 1em;
+            }
         }
     }
 }
